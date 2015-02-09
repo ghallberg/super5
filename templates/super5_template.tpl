@@ -12,8 +12,8 @@
 
     <div id = 'input'>
         <form action = '/super5' method = 'post' class = 'centered'>
-            <label>Address: <input type = 'text' name = 'address'> </label>
-            <label>Word: <input type = 'text' name = 'word'> </label>
+            <label>Address: <input type = 'text' name = 'address' placeholder = 'http://aftonbladet.se'> </label>
+            <label>Word: <input type = 'text' name = 'word' placeholder = 'super'> </label>
             <input type = 'submit' value = 'COUNT!'>
         </form>
     </div>

@@ -3,13 +3,12 @@ from super5 import count_address_word
 
 def apply_template(in_address, in_word):
     address_count = count_address_word(in_address, in_word)
-    print('template')
     return template('templates/super5_template', address=in_address, word=in_word, number=address_count)
 
 @route('/super5')
 @route('/')
 def index():
-    return apply_template('http://gp.se', 'göteborg')
+    return apply_template('http://www.aftonbladet.se', 'super')
 
 @route('/super5', method='POST')
 def custom():
