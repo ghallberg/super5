@@ -1,20 +1,48 @@
-<head>
+<!DOCTYPE html>
+<html>
+  <head>
     <title>
-        Number of {{word}}´s on {{address}}
+      {{number}} {{word}}´s on {{address}}
     </title>
     <LINK href="/static/super5.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-    <div id = 'output' class = 'centered'>
-        There are <b>{{number}}</b> <b>{{word}}</b>'s on <b>{{address}}</b>
-    </div>
-    
+  </head>
 
-    <div id = 'input'>
-        <form action = '/super5' method = 'post' class = 'centered'>
-            <label>Word: <input type = 'text' name = 'word' placeholder = 'super'> </label>
-            <label>Address: <input type = 'text' name = 'address' placeholder = 'http://aftonbladet.se'> </label>
-            <input type = 'submit' value = 'COUNT!'>
+  <body>
+    <div id = 'content'>
+      <div id = 'header' class = 'centered'>
+        <h1>
+          super5
+        </h1>
+      </div>
+
+      <div id = 'output' class = 'centered'>
+        <p>
+          There are <b class='num'>{{number}}</b> <b>{{word}}</b>'s on
+        </p>
+        <p>
+          <b>{{address}}</b>
+        </p>
+      </div>
+
+      <div id = 'input' class = 'centered'>
+        <form action = '/super5' method = 'post'>
+          <div class="block">
+            <label>
+              word
+            </label>
+            <input type = 'text' name = 'word' placeholder = 'super'>
+          </div>
+          <div class="block">
+            <label>
+              address
+            </label>
+            <input type = 'text' name = 'address' placeholder = 'http://aftonbladet.se'>
+            <div>
+              <input id='submit' type = 'submit' value = 'count'>
+            </div>
+          </div>
         </form>
+      </div>
     </div>
-</body>
+  </body>
+</html>
