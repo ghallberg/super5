@@ -2,6 +2,8 @@ from urllib.request import urlopen
 import html2text
 
 def get_site(address):
+    if not address.startswith('http://'):
+        address = "".join(['http://',address])
     with urlopen(address) as stream :
         html = stream.read().decode('utf8')
         return str(html)
