@@ -11,12 +11,10 @@ body {
 }
 
 #header {
-  border-bottom: 3px solid #d35d47;
 }
 
 .centered {
   font-family: Verdana, Geneva, sans-serif;
-  border-bottom: 3px solid #d35d47;
 }
 
 #output {
